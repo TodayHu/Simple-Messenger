@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50FFF3F1AE37852002516BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FFF3E1AE37852002516BF /* AppDelegate.swift */; };
+		F50FFF411AE37852002516BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FFF401AE37852002516BF /* ViewController.swift */; };
+		F50FFF441AE37852002516BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50FFF421AE37852002516BF /* Main.storyboard */; };
+		F50FFF461AE37852002516BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50FFF451AE37852002516BF /* Images.xcassets */; };
+		F50FFF491AE37852002516BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50FFF471AE37852002516BF /* LaunchScreen.xib */; };
+		F50FFF551AE37853002516BF /* Simple_MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FFF541AE37853002516BF /* Simple_MessengerTests.swift */; };
+		F50FFF611AE378C3002516BF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF5F1AE378C3002516BF /* Bolts.framework */; };
+		F50FFF621AE378C3002516BF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF601AE378C3002516BF /* Parse.framework */; };
+		F50FFF641AE378E3002516BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF631AE378E3002516BF /* AudioToolbox.framework */; };
+		F50FFF661AE378E9002516BF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF651AE378E9002516BF /* CFNetwork.framework */; };
+		F50FFF681AE378ED002516BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF671AE378ED002516BF /* CoreGraphics.framework */; };
+		F50FFF6A1AE378F1002516BF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF691AE378F1002516BF /* CoreLocation.framework */; };
+		F50FFF6C1AE378F8002516BF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF6B1AE378F8002516BF /* MobileCoreServices.framework */; };
+		F50FFF6E1AE378FE002516BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF6D1AE378FE002516BF /* QuartzCore.framework */; };
+		F50FFF701AE37903002516BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF6F1AE37903002516BF /* Security.framework */; };
+		F50FFF721AE37907002516BF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF711AE37907002516BF /* StoreKit.framework */; };
+		F50FFF741AE3790C002516BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF731AE3790C002516BF /* SystemConfiguration.framework */; };
+		F50FFF761AE37912002516BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF751AE37912002516BF /* libz.dylib */; };
+		F50FFF781AE37919002516BF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50FFF771AE37919002516BF /* libsqlite3.dylib */; };
+		F50FFF831AE379CB002516BF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FFF821AE379CB002516BF /* InterfaceController.swift */; };
+		F50FFF851AE379CB002516BF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FFF841AE379CB002516BF /* NotificationController.swift */; };
+		F50FFF871AE379CB002516BF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FFF861AE379CB002516BF /* GlanceController.swift */; };
+		F50FFF891AE379CB002516BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50FFF881AE379CB002516BF /* Images.xcassets */; };
+		F50FFF8D1AE379CB002516BF /* Simple Messenger WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F50FFF8C1AE379CB002516BF /* Simple Messenger WatchKit App.app */; };
+		F50FFF951AE379CB002516BF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50FFF931AE379CB002516BF /* Interface.storyboard */; };
+		F50FFF971AE379CB002516BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50FFF961AE379CB002516BF /* Images.xcassets */; };
+		F50FFF9B1AE379CB002516BF /* Simple Messenger WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F50FFF7D1AE379CB002516BF /* Simple Messenger WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F50FFF4F1AE37852002516BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50FFF311AE37852002516BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50FFF381AE37852002516BF;
+			remoteInfo = "Simple Messenger";
+		};
+		F50FFF8E1AE379CB002516BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50FFF311AE37852002516BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50FFF8B1AE379CB002516BF;
+			remoteInfo = "Simple Messenger WatchKit App";
+		};
+		F50FFF981AE379CB002516BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50FFF311AE37852002516BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50FFF7C1AE379CB002516BF;
+			remoteInfo = "Simple Messenger WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F50FFF9A1AE379CB002516BF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F50FFF9B1AE379CB002516BF /* Simple Messenger WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F50FFF391AE37852002516BF /* Simple Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50FFF3D1AE37852002516BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50FFF3E1AE37852002516BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F50FFF401AE37852002516BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F50FFF431AE37852002516BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F50FFF451AE37852002516BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F50FFF481AE37852002516BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F50FFF4E1AE37852002516BF /* Simple MessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple MessengerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50FFF531AE37852002516BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50FFF541AE37853002516BF /* Simple_MessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_MessengerTests.swift; sourceTree = "<group>"; };
+		F50FFF5F1AE378C3002516BF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F50FFF601AE378C3002516BF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F50FFF631AE378E3002516BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F50FFF651AE378E9002516BF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F50FFF671AE378ED002516BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F50FFF691AE378F1002516BF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F50FFF6B1AE378F8002516BF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F50FFF6D1AE378FE002516BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F50FFF6F1AE37903002516BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F50FFF711AE37907002516BF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F50FFF731AE3790C002516BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F50FFF751AE37912002516BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F50FFF771AE37919002516BF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F50FFF7D1AE379CB002516BF /* Simple Messenger WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Messenger WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50FFF801AE379CB002516BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50FFF811AE379CB002516BF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F50FFF821AE379CB002516BF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F50FFF841AE379CB002516BF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F50FFF861AE379CB002516BF /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		F50FFF881AE379CB002516BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F50FFF8C1AE379CB002516BF /* Simple Messenger WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Messenger WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50FFF921AE379CB002516BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50FFF941AE379CB002516BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F50FFF961AE379CB002516BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50FFF361AE37852002516BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FFF781AE37919002516BF /* libsqlite3.dylib in Frameworks */,
+				F50FFF761AE37912002516BF /* libz.dylib in Frameworks */,
+				F50FFF741AE3790C002516BF /* SystemConfiguration.framework in Frameworks */,
+				F50FFF721AE37907002516BF /* StoreKit.framework in Frameworks */,
+				F50FFF701AE37903002516BF /* Security.framework in Frameworks */,
+				F50FFF6E1AE378FE002516BF /* QuartzCore.framework in Frameworks */,
+				F50FFF6C1AE378F8002516BF /* MobileCoreServices.framework in Frameworks */,
+				F50FFF6A1AE378F1002516BF /* CoreLocation.framework in Frameworks */,
+				F50FFF681AE378ED002516BF /* CoreGraphics.framework in Frameworks */,
+				F50FFF661AE378E9002516BF /* CFNetwork.framework in Frameworks */,
+				F50FFF641AE378E3002516BF /* AudioToolbox.framework in Frameworks */,
+				F50FFF621AE378C3002516BF /* Parse.framework in Frameworks */,
+				F50FFF611AE378C3002516BF /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50FFF4B1AE37852002516BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50FFF7A1AE379CB002516BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50FFF301AE37852002516BF = {
+			isa = PBXGroup;
+			children = (
+				F50FFF3B1AE37852002516BF /* Simple Messenger */,
+				F50FFF7E1AE379CB002516BF /* Simple Messenger WatchKit Extension */,
+				F50FFF901AE379CB002516BF /* Simple Messenger WatchKit App */,
+				F50FFF5E1AE3787C002516BF /* Frameworks */,
+				F50FFF511AE37852002516BF /* Simple MessengerTests */,
+				F50FFF3A1AE37852002516BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50FFF3A1AE37852002516BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF391AE37852002516BF /* Simple Messenger.app */,
+				F50FFF4E1AE37852002516BF /* Simple MessengerTests.xctest */,
+				F50FFF7D1AE379CB002516BF /* Simple Messenger WatchKit Extension.appex */,
+				F50FFF8C1AE379CB002516BF /* Simple Messenger WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50FFF3B1AE37852002516BF /* Simple Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF3E1AE37852002516BF /* AppDelegate.swift */,
+				F50FFF401AE37852002516BF /* ViewController.swift */,
+				F50FFF421AE37852002516BF /* Main.storyboard */,
+				F50FFF451AE37852002516BF /* Images.xcassets */,
+				F50FFF471AE37852002516BF /* LaunchScreen.xib */,
+				F50FFF3C1AE37852002516BF /* Supporting Files */,
+			);
+			path = "Simple Messenger";
+			sourceTree = "<group>";
+		};
+		F50FFF3C1AE37852002516BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF3D1AE37852002516BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F50FFF511AE37852002516BF /* Simple MessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF541AE37853002516BF /* Simple_MessengerTests.swift */,
+				F50FFF521AE37852002516BF /* Supporting Files */,
+			);
+			path = "Simple MessengerTests";
+			sourceTree = "<group>";
+		};
+		F50FFF521AE37852002516BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF531AE37852002516BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F50FFF5E1AE3787C002516BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF771AE37919002516BF /* libsqlite3.dylib */,
+				F50FFF751AE37912002516BF /* libz.dylib */,
+				F50FFF731AE3790C002516BF /* SystemConfiguration.framework */,
+				F50FFF711AE37907002516BF /* StoreKit.framework */,
+				F50FFF6F1AE37903002516BF /* Security.framework */,
+				F50FFF6D1AE378FE002516BF /* QuartzCore.framework */,
+				F50FFF6B1AE378F8002516BF /* MobileCoreServices.framework */,
+				F50FFF691AE378F1002516BF /* CoreLocation.framework */,
+				F50FFF671AE378ED002516BF /* CoreGraphics.framework */,
+				F50FFF651AE378E9002516BF /* CFNetwork.framework */,
+				F50FFF631AE378E3002516BF /* AudioToolbox.framework */,
+				F50FFF5F1AE378C3002516BF /* Bolts.framework */,
+				F50FFF601AE378C3002516BF /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F50FFF7E1AE379CB002516BF /* Simple Messenger WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF821AE379CB002516BF /* InterfaceController.swift */,
+				F50FFF841AE379CB002516BF /* NotificationController.swift */,
+				F50FFF861AE379CB002516BF /* GlanceController.swift */,
+				F50FFF881AE379CB002516BF /* Images.xcassets */,
+				F50FFF7F1AE379CB002516BF /* Supporting Files */,
+			);
+			path = "Simple Messenger WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F50FFF7F1AE379CB002516BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF801AE379CB002516BF /* Info.plist */,
+				F50FFF811AE379CB002516BF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F50FFF901AE379CB002516BF /* Simple Messenger WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF931AE379CB002516BF /* Interface.storyboard */,
+				F50FFF961AE379CB002516BF /* Images.xcassets */,
+				F50FFF911AE379CB002516BF /* Supporting Files */,
+			);
+			path = "Simple Messenger WatchKit App";
+			sourceTree = "<group>";
+		};
+		F50FFF911AE379CB002516BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50FFF921AE379CB002516BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50FFF381AE37852002516BF /* Simple Messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50FFF581AE37853002516BF /* Build configuration list for PBXNativeTarget "Simple Messenger" */;
+			buildPhases = (
+				F50FFF351AE37852002516BF /* Sources */,
+				F50FFF361AE37852002516BF /* Frameworks */,
+				F50FFF371AE37852002516BF /* Resources */,
+				F50FFF9A1AE379CB002516BF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50FFF991AE379CB002516BF /* PBXTargetDependency */,
+			);
+			name = "Simple Messenger";
+			productName = "Simple Messenger";
+			productReference = F50FFF391AE37852002516BF /* Simple Messenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F50FFF4D1AE37852002516BF /* Simple MessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50FFF5B1AE37853002516BF /* Build configuration list for PBXNativeTarget "Simple MessengerTests" */;
+			buildPhases = (
+				F50FFF4A1AE37852002516BF /* Sources */,
+				F50FFF4B1AE37852002516BF /* Frameworks */,
+				F50FFF4C1AE37852002516BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50FFF501AE37852002516BF /* PBXTargetDependency */,
+			);
+			name = "Simple MessengerTests";
+			productName = "Simple MessengerTests";
+			productReference = F50FFF4E1AE37852002516BF /* Simple MessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F50FFF7C1AE379CB002516BF /* Simple Messenger WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50FFF9F1AE379CB002516BF /* Build configuration list for PBXNativeTarget "Simple Messenger WatchKit Extension" */;
+			buildPhases = (
+				F50FFF791AE379CB002516BF /* Sources */,
+				F50FFF7A1AE379CB002516BF /* Frameworks */,
+				F50FFF7B1AE379CB002516BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50FFF8F1AE379CB002516BF /* PBXTargetDependency */,
+			);
+			name = "Simple Messenger WatchKit Extension";
+			productName = "Simple Messenger WatchKit Extension";
+			productReference = F50FFF7D1AE379CB002516BF /* Simple Messenger WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F50FFF8B1AE379CB002516BF /* Simple Messenger WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50FFF9C1AE379CB002516BF /* Build configuration list for PBXNativeTarget "Simple Messenger WatchKit App" */;
+			buildPhases = (
+				F50FFF8A1AE379CB002516BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Messenger WatchKit App";
+			productName = "Simple Messenger WatchKit App";
+			productReference = F50FFF8C1AE379CB002516BF /* Simple Messenger WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50FFF311AE37852002516BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = NSoojin;
+				TargetAttributes = {
+					F50FFF381AE37852002516BF = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					F50FFF4D1AE37852002516BF = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = F50FFF381AE37852002516BF;
+					};
+					F50FFF7C1AE379CB002516BF = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					F50FFF8B1AE379CB002516BF = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = F50FFF341AE37852002516BF /* Build configuration list for PBXProject "Simple Messenger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50FFF301AE37852002516BF;
+			productRefGroup = F50FFF3A1AE37852002516BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50FFF381AE37852002516BF /* Simple Messenger */,
+				F50FFF4D1AE37852002516BF /* Simple MessengerTests */,
+				F50FFF7C1AE379CB002516BF /* Simple Messenger WatchKit Extension */,
+				F50FFF8B1AE379CB002516BF /* Simple Messenger WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50FFF371AE37852002516BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FFF441AE37852002516BF /* Main.storyboard in Resources */,
+				F50FFF491AE37852002516BF /* LaunchScreen.xib in Resources */,
+				F50FFF461AE37852002516BF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50FFF4C1AE37852002516BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50FFF7B1AE379CB002516BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FFF891AE379CB002516BF /* Images.xcassets in Resources */,
+				F50FFF8D1AE379CB002516BF /* Simple Messenger WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50FFF8A1AE379CB002516BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FFF951AE379CB002516BF /* Interface.storyboard in Resources */,
+				F50FFF971AE379CB002516BF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50FFF351AE37852002516BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FFF411AE37852002516BF /* ViewController.swift in Sources */,
+				F50FFF3F1AE37852002516BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50FFF4A1AE37852002516BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FFF551AE37853002516BF /* Simple_MessengerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50FFF791AE379CB002516BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FFF851AE379CB002516BF /* NotificationController.swift in Sources */,
+				F50FFF831AE379CB002516BF /* InterfaceController.swift in Sources */,
+				F50FFF871AE379CB002516BF /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F50FFF501AE37852002516BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50FFF381AE37852002516BF /* Simple Messenger */;
+			targetProxy = F50FFF4F1AE37852002516BF /* PBXContainerItemProxy */;
+		};
+		F50FFF8F1AE379CB002516BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50FFF8B1AE379CB002516BF /* Simple Messenger WatchKit App */;
+			targetProxy = F50FFF8E1AE379CB002516BF /* PBXContainerItemProxy */;
+		};
+		F50FFF991AE379CB002516BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50FFF7C1AE379CB002516BF /* Simple Messenger WatchKit Extension */;
+			targetProxy = F50FFF981AE379CB002516BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F50FFF421AE37852002516BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50FFF431AE37852002516BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F50FFF471AE37852002516BF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50FFF481AE37852002516BF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F50FFF931AE379CB002516BF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50FFF941AE379CB002516BF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50FFF561AE37853002516BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50FFF571AE37853002516BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50FFF591AE37853002516BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Simple Messenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F50FFF5A1AE37853002516BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Simple Messenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F50FFF5C1AE37853002516BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simple MessengerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Messenger.app/Simple Messenger";
+			};
+			name = Debug;
+		};
+		F50FFF5D1AE37853002516BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simple MessengerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Messenger.app/Simple Messenger";
+			};
+			name = Release;
+		};
+		F50FFF9D1AE379CB002516BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Simple_Messenger_WatchKit_Extension;
+				INFOPLIST_FILE = "Simple Messenger WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F50FFF9E1AE379CB002516BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Simple_Messenger_WatchKit_Extension;
+				INFOPLIST_FILE = "Simple Messenger WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		F50FFFA01AE379CB002516BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simple Messenger WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F50FFFA11AE379CB002516BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Simple Messenger WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50FFF341AE37852002516BF /* Build configuration list for PBXProject "Simple Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50FFF561AE37853002516BF /* Debug */,
+				F50FFF571AE37853002516BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50FFF581AE37853002516BF /* Build configuration list for PBXNativeTarget "Simple Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50FFF591AE37853002516BF /* Debug */,
+				F50FFF5A1AE37853002516BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F50FFF5B1AE37853002516BF /* Build configuration list for PBXNativeTarget "Simple MessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50FFF5C1AE37853002516BF /* Debug */,
+				F50FFF5D1AE37853002516BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F50FFF9C1AE379CB002516BF /* Build configuration list for PBXNativeTarget "Simple Messenger WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50FFF9D1AE379CB002516BF /* Debug */,
+				F50FFF9E1AE379CB002516BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F50FFF9F1AE379CB002516BF /* Build configuration list for PBXNativeTarget "Simple Messenger WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50FFFA01AE379CB002516BF /* Debug */,
+				F50FFFA11AE379CB002516BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50FFF311AE37852002516BF /* Project object */;
+}
