@@ -56,10 +56,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - WatchKit's openParentApplication call
     func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
-          
-        reply(["content":"hello Watch"])
         
+        if let message = userInfo as? [String:String] {
+            if let content = message["content"] {
+                if content == "runParseCode" {
+                    var query = PFQuery(className:"GameScore")
+                    query.getObjectInBackgroundWithId("QCOp9Tuzpt", block: { (gameScore: PFObject?, error: NSError?) -> Void in
+                        if error == nil {
+                            if let result = gameScore {
+                                if let score: AnyObject = result["score"] {
+                                    reply(["content":score])
+                                }
+                            } else {
+                                reply(["error":"game score is nil"])
+                            }
+                        } else {
+                            reply(["error":error!.description])
+                        }
+                    })
+                } else {
+                    reply(["content":"What do you want?"])
+                }
+            }
+        }
     }
-
 }
 

@@ -15,7 +15,7 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        var message = ["content" : "Hello!"]
+        var message = ["content" : "runParseCode"]
         
         WKInterfaceController.openParentApplication(message, reply: { (reply: [NSObject : AnyObject]!, error: NSError!) -> Void in
             println(reply)
